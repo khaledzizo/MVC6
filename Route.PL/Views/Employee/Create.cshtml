@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container">
+    <h1>Create</h1>
+    <form asp-action="Create" method="post" enctype="multipart/form-data">
+
+        <partial name="PartialViews/CreateUpdatePartialView" />
+        <input type="submit" value="Create New Employee" class="btn btn-primary" />
+    </form>
+</div>

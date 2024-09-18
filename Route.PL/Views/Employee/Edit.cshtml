@@ -1,0 +1,18 @@
+﻿@model EmployeeVM
+
+@{
+    ViewData["Title"] = "Update";
+}
+
+<div class="container">
+    <h1>Update</h1>
+    <form asp-action="Edit" method="post" enctype="multipart/form-data">
+        <partial name="PartialViews/CreateUpdatePartialView" />
+        <div class="row">
+            <div class="col-1">
+                <img class="w-100" src="~/Files/Images/@Model.ImageName" alt="Can't load Image!" />
+            </div>
+        </div>
+        <input type="submit" value="Update Employee Data" class="btn btn-primary" />
+    </form>
+</div>

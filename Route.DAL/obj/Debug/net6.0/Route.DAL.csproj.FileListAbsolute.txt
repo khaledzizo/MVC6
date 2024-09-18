@@ -1,0 +1,12 @@
+D:\work\Courses\Asp.net\Eng.Ahmed Khaled\05 MVC\Route.Solution\Route.DAL\bin\Debug\net6.0\Route.DAL.deps.json
+D:\work\Courses\Asp.net\Eng.Ahmed Khaled\05 MVC\Route.Solution\Route.DAL\bin\Debug\net6.0\Route.DAL.dll
+D:\work\Courses\Asp.net\Eng.Ahmed Khaled\05 MVC\Route.Solution\Route.DAL\bin\Debug\net6.0\Route.DAL.pdb
+D:\work\Courses\Asp.net\Eng.Ahmed Khaled\05 MVC\Route.Solution\Route.DAL\obj\Debug\net6.0\Route.DAL.csproj.AssemblyReference.cache
+D:\work\Courses\Asp.net\Eng.Ahmed Khaled\05 MVC\Route.Solution\Route.DAL\obj\Debug\net6.0\Route.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\work\Courses\Asp.net\Eng.Ahmed Khaled\05 MVC\Route.Solution\Route.DAL\obj\Debug\net6.0\Route.DAL.AssemblyInfoInputs.cache
+D:\work\Courses\Asp.net\Eng.Ahmed Khaled\05 MVC\Route.Solution\Route.DAL\obj\Debug\net6.0\Route.DAL.AssemblyInfo.cs
+D:\work\Courses\Asp.net\Eng.Ahmed Khaled\05 MVC\Route.Solution\Route.DAL\obj\Debug\net6.0\Route.DAL.csproj.CoreCompileInputs.cache
+D:\work\Courses\Asp.net\Eng.Ahmed Khaled\05 MVC\Route.Solution\Route.DAL\obj\Debug\net6.0\Route.DAL.dll
+D:\work\Courses\Asp.net\Eng.Ahmed Khaled\05 MVC\Route.Solution\Route.DAL\obj\Debug\net6.0\refint\Route.DAL.dll
+D:\work\Courses\Asp.net\Eng.Ahmed Khaled\05 MVC\Route.Solution\Route.DAL\obj\Debug\net6.0\Route.DAL.pdb
+D:\work\Courses\Asp.net\Eng.Ahmed Khaled\05 MVC\Route.Solution\Route.DAL\obj\Debug\net6.0\ref\Route.DAL.dll

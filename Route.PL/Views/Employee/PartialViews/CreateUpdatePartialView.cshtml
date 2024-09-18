@@ -1,0 +1,54 @@
+﻿@model EmployeeVM
+
+@{
+    var departments = new SelectList(ViewBag.Departments, "Id", "Name");
+}
+
+
+<div class="form-group mb-3">
+    <label asp-for="@Model.Name" for="name" class="form-label">Name</label>
+    <input asp-for="@Model.Name" type="text" class="form-control">
+    <span asp-validation-for="@Model.Name" class="text-danger"></span>
+</div>
+<div class="form-group mb-3">
+    <label asp-for="@Model.Email" for="name" class="form-label">Email</label>
+    <input asp-for="@Model.Email" type="text" class="form-control">
+    <span asp-validation-for="@Model.Email" class="text-danger"></span>
+</div>
+<div class="form-group mb-3">
+    <label asp-for="@Model.Address" for="name" class="form-label">Address</label>
+    <input asp-for="@Model.Address" type="text" class="form-control">
+    <span asp-validation-for="@Model.Address" class="text-danger"></span>
+</div>
+<div class="form-group mb-3">
+    <label asp-for="@Model.Salary" for="name" class="form-label">Salary</label>
+    <input asp-for="@Model.Salary" type="number" class="form-control">
+    <span asp-validation-for="@Model.Salary" class="text-danger"></span>
+</div>
+<div class="form-group mb-3">
+    <label asp-for="@Model.DepartmentId" for="name" class="form-label">Department</label>
+    <select asp-for="@Model.DepartmentId" asp-items="@departments" class="form-select" aria-label="Default select example">
+        <option value="1">---- Select a department ----</option>
+    </select>
+</div>
+
+<div class="form-group mb-3">
+    <label asp-for="@Model.HireDate" for="name" class="form-label">Hire Date</label>
+    <input asp-for="@Model.HireDate" type="date" class="form-control">
+    <span asp-validation-for="@Model.HireDate" class="text-danger"></span>
+</div>
+<div class="form-group mb-3">
+    <input asp-for="@Model.IsActive" class="form-check-input" type="checkbox">
+    <label asp-for="@Model.IsActive" class="form-check-label">
+        Is Active
+    </label>
+    <span asp-validation-for="@Model.IsActive" class="text-danger"></span>
+</div>
+<div class="form-group mb-3">
+    <label asp-for="@Model.Image" class="form-check-label">
+        Image
+    </label>
+    <input asp-for="@Model.Image" class="form-check-input" type="file">
+    <span asp-validation-for="@Model.Image" class="text-danger"></span>
+</div>
+

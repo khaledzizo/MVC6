@@ -1,0 +1,21 @@
+﻿@model LoginVM
+@{
+	ViewData["Title"] = "SignUp";
+	Layout = "~/Views/Shared/_AuthLayout.cshtml";
+}
+
+<form action="SignIn" method="post">
+	<input class="text email" type="email" placeholder="Email" asp-for="@Model.Email">
+	<span asp-validation-for="@Model.Email" class="text-danger"></span>
+	<input class="text" type="password" placeholder="Password" asp-for="@Model.Password">
+	<span asp-validation-for="@Model.Password" class="text-danger"></span>
+	<div class="wthree-text">
+		<label class="anim">
+			<input type="checkbox" class="checkbox" required="" asp-for="@Model.RememberMe">
+			<span>Remember Me</span>
+		</label>
+		<div class="clear"></div>
+	</div>
+	<input type="submit" value="SIGNIN">
+</form>
+<p>Don't have an Account? <a href="#"> Forgot Password!</a></p>

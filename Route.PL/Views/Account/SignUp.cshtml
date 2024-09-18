@@ -1,0 +1,23 @@
+﻿@model RegisterVM
+@{
+    ViewData["Title"] = "SignUp";
+    Layout = "~/Views/Shared/_AuthLayout.cshtml";
+}
+
+<form action="#" method="post">
+	<input class="text email" type="email" placeholder="Email" asp-for="@Model.Email">
+	<span asp-validation-for="@Model.Email" class="text-danger"></span>
+	<input class="text" type="password" placeholder="Password" asp-for="@Model.Password">
+	<span asp-validation-for="@Model.Password" class="text-danger"></span>
+	<input class="text w3lpass" type="password" placeholder="Confirm Password" asp-for="@Model.ConfirmPassword">
+	<span asp-validation-for="@Model.ConfirmPassword" class="text-danger"></span>
+	<div class="wthree-text">
+		<label class="anim">
+			<input type="checkbox" class="checkbox" required="" asp-for="@Model.IsAgree">
+			<span>I Agree To The Terms & Conditions</span>
+		</label>
+		<div class="clear"></div>
+	</div>
+	<input type="submit" value="SIGNUP">
+</form>
+<p>Don't have an Account? <a asp-action="SignIn"> Login Now!</a></p>

@@ -1,0 +1,47 @@
+﻿@model IEnumerable<DepartmentVM>
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="container">
+    <h1>All Departments</h1>
+    @if (Model.Count() > 0)
+    {
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>@Html.DisplayNameFor(dept => dept.Code)</th>
+                    <th>@Html.DisplayNameFor(dept => dept.Name)</th>
+                    <th>Details</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                    <th>Department Employees</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Code</td>
+                        <td>@item.Name</td>
+                        <td><a class="btn btn-success" asp-action="Details" asp-route-id="@item.Id">Details</a></td>
+                        <td><a class="btn btn-warning" asp-action="Update" asp-route-id="@item.Id">Update</a></td>
+                        <td><a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a></td>
+                        <td><a class="btn btn-info" asp-controller="Employee" asp-action="Index" asp-route-departmentId="@item.Id">Employees In Department</a></td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    }
+    else
+    {
+        <div class="alert alert-warning">
+            <h3>No Departments Found!</h3>
+        </div>
+    }
+    <a class="btn btn-success" asp-action="Create">Create New Department</a>
+</div>
+
